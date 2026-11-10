@@ -2,11 +2,12 @@
 ## Breast Cancer Diagnosis ML & DL Benchmark (Synthesis of 20 Journal Papers)
 
 [![Author](https://img.shields.io/badge/Author-Alireza%20Naseri-blue.svg)](https://github.com/alirezanaseri548)
-[![Status](https://img.shields.io/badge/Progress-Day%201%20of%205-orange.svg)]()
+[![Status](https://img.shields.io/badge/Progress-Day%202%20of%205-yellowgreen.svg)]()
+[![Papers](https://img.shields.io/badge/Reviewed%20Journals-20%20Papers%20(Nature%20%26%20IEEE)-success.svg)]()
 
 این ریپازیتوری به بررسی، تحلیل نرخ خطا و پیاده‌سازی الگوریتم‌های ۲۰ مقاله معتبر ژورنالی (**Springer Nature** و **IEEE**) از سال ۲۰۲۳ تا ۲۰۲۵ در زمینه تشخیص سرطان سینه می‌پردازد.
 
-### 📊 بخش اول جدول مقالات بررسی‌شده (Papers 1 to 10)
+### 📊 جدول کامل ۲۰ مقاله بررسی‌شده (Complete 20-Paper Benchmark)
 
 | ردیف | عنوان و سال مقاله | ژورنال / ناشر | الگوریتم هسته | دقت | نرخ خطا | لینک |
 | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -20,9 +21,18 @@
 | **8** | Enhancing Registration via LSTM (2024) | Scientific Reports | Spatio-Temporal CNN-LSTM | 97.10% | **2.90%** | [Link](https://www.nature.com/articles/s41598-024-82965-9) |
 | **9** | Integrated Feature Selection & ML (2025) | Scientific Reports | mRMR + ReliefF + SVM/KNN | 99.12% | **0.88%** | [Link](https://www.nature.com/articles/s41598-025-97685-x) |
 | **10** | Aggregated Coefficient Ranking (2025) | Scientific Reports | ACR Feature Ranking + SVM | 98.40% | **1.60%** | [Link](https://www.nature.com/articles/s41598-025-87826-7) |
+| **11** | Detection of BC Using ML Optimization (2025) | Scientific Reports | GA & PSO Optimized SVM | 98.75% | **1.25%** | [Link](https://www.nature.com/articles/s41598-025-12644-w) |
+| **12** | Enhancing BC Diagnosis Through ML (2025) | Scientific Reports | SVM, KNN (K=5), DT, RF | 98.95% | **1.05%** | [Link](https://www.nature.com/articles/s41598-025-07628-9) |
+| **13** | BCDCNN: Deep Convolutional Network (2025) | Scientific Reports | Multi-Scale Custom CNN | 98.30% | **1.70%** | [Link](https://www.nature.com/articles/s41598-025-09974-0) |
+| **14** | Explainable AI-Driven DNN (2025) | Scientific Reports | Multi-Layer DNN + LIME/SHAP | 97.90% | **2.10%** | [Link](https://www.nature.com/articles/s41598-025-97718-5) |
+| **15** | Histopathological Image Based Diagnosis (2025) | Scientific Reports | EfficientNet + DenseNet | 99.05% | **0.95%** | [Link](https://www.nature.com/articles/s41598-025-04136-8) |
+| **16** | Multimodal Imaging DL Model (2025) | Scientific Reports | Multimodal CNN Fusion | 98.65% | **1.35%** | [Link](https://www.nature.com/articles/s41598-025-99535-2) |
+| **17** | Hybrid CNN with LSTM (Kaddes, 2025) | Scientific Reports | Sequential CNN-LSTM | 98.45% | **1.55%** | [Link](https://www.nature.com/articles/s41598-025-88459-6) |
+| **18** | Hybrid CNN-BiLSTM Framework (Lilhore, 2025) | Scientific Reports | CNN-BiLSTM + Attention | 98.80% | **1.20%** | [Link](https://www.nature.com/articles/s41598-025-95311-4) |
+| **19** | Parametric Survival vs ML Prognosis (2025) | Scientific Reports | Cox/Weibull + Deep Survival | 96.70% | **3.30%** | [Link](https://www.nature.com/articles/s41598-025-15696-0) |
+| **20** | Early BC Detection via Data Analysis (2024) | IEEE Access | Statistical FE + SVM/DL | 98.62% | **1.38%** | [PDF](https://ieeexplore.ieee.org/iel8/6287639/10380310/10720756.pdf) |
 
 ---
-### 🛠 ماژول‌های پیاده‌سازی شده در روز اول (Day 1 Modules)
-- src/data_loader.py: بارگذاری دیتاست WDBC و استانداردسازی Z-Score بدون نشت داده (Data Leakage Prevention).
-- src/feature_selection.py: انتخاب ویژگی و رتبه‌بندی بیومارکرها بر اساس ضریب همبستگی پیرسون (مقالات ۹ و ۱۰).
-- src/svm_optimizer.py: بهینه‌سازی ماشین بردار پشتیبان (SVM) با کرنل RBF و تحلیل اثر $ و $\gamma$ (مقالات ۱، ۱۱ و ۱۲).
+### 🛠 ماژول‌های پیاده‌سازی شده تا پایان روز دوم (Implemented Modules)
+- **Day 1:** data_loader.py (پیش‌پردازش Z-Score)، eature_selection.py (رتبه‌بندی بیومارکرها)، svm_optimizer.py (بهینه‌سازی کرنل RBF در SVM).
+- **Day 2:** smote_balancer.py (توازن کلاس‌ها با SMOTE)، knn_classifier.py (تحلیل همسایگی KNN)، ensemble_models.py (مدل‌های ترکیبی RF, AdaBoost, Voting)، 	abular_benchmark.py (بنچمارک جامع داده‌های بالینی).
