@@ -1,53 +1,148 @@
 ﻿# 🧬 تشخیص سرطان سینه با یادگیری ماشین و یادگیری عمیق (سنتز ۲۰ مقاله ژورنالی ۲۰۲۳-۲۰۲۵)
-## Breast Cancer Diagnosis ML & DL Benchmark (Synthesis of 20 Journal Papers)
+## Breast Cancer Diagnosis ML & DL Benchmark (Synthesis of 20 Peer-Reviewed Journal Papers)
 
 [![Author](https://img.shields.io/badge/Author-Alireza%20Naseri-blue.svg)](https://github.com/alirezanaseri548)
-[![Status](https://img.shields.io/badge/Progress-Day%202%20of%205-yellowgreen.svg)]()
+[![Status](https://img.shields.io/badge/Progress-Day%204%20of%205%20Completed-yellowgreen.svg)]()
 [![Papers](https://img.shields.io/badge/Reviewed%20Journals-20%20Papers%20(Nature%20%26%20IEEE)-success.svg)]()
+[![Python](https://img.shields.io/badge/Python-3.10%2B-yellow.svg)]()
 
-این ریپازیتوری به بررسی، تحلیل نرخ خطا و پیاده‌سازی الگوریتم‌های ۲۰ مقاله معتبر ژورنالی (**Springer Nature** و **IEEE**) از سال ۲۰۲۳ تا ۲۰۲۵ در زمینه تشخیص سرطان سینه می‌پردازد.
+این ریپازیتوری به بررسی، تحلیل نرخ خطا (Error Rate)، خلاصه‌سازی علمی و پیاده‌سازی ماژولار الگوریتم‌های **۲۰ مقاله معتبر ژورنالی (Springer Nature و IEEE)** از سال **۲۰۲۳ تا ۲۰۲۵** در زمینه تشخیص و پیش‌آگهی سرطان سینه می‌پردازد.
 
-### 📊 جدول کامل ۲۰ مقاله بررسی‌شده (Complete 20-Paper Benchmark)
+---
 
-| ردیف | عنوان و سال مقاله | ژورنال / ناشر | الگوریتم هسته | دقت | نرخ خطا | لینک |
+### 📊 جدول مقایسه‌ای کامل ۲۰ مقاله بررسی‌شده (Summary Comparison Table)
+
+| ردیف | عنوان و سال مقاله | ژورنال / ناشر | الگوریتم‌ها و متدولوژی هسته | دقت | نرخ خطا | لینک مقاله |
 | :---: | :--- | :--- | :--- | :---: | :---: | :---: |
-| **1** | Optimized SVM for BC Detection (Bilal, 2024) | Scientific Reports | Quantum GWO + RBF-SVM | 98.60% | **1.40%** | [Link](https://www.nature.com/articles/s41598-024-61322-w) |
-| **2** | Predictive Modeling for BC Classification (2024) | Scientific Reports | SVM, KNN, RF, XGBoost | 98.25% | **1.75%** | [Link](https://www.nature.com/articles/s41598-024-57740-5) |
-| **3** | Feature-Based Detection Using CNN (2024) | Scientific Reports | Custom CNN + Transfer Learning | 97.80% | **2.20%** | [Link](https://www.nature.com/articles/s41598-024-73083-7) |
-| **4** | Deep Learning & Explainable AI (2024) | Scientific Reports | DNN + Grad-CAM & SHAP | 98.10% | **1.90%** | [Link](https://www.nature.com/articles/s41598-024-80535-7) |
-| **5** | Integrative Hybrid Deep Learning (2024) | Scientific Reports | ResNet + DenseNet Hybrid | 98.55% | **1.45%** | [Link](https://www.nature.com/articles/s41598-024-74305-8) |
-| **6** | Integrative ML Framework for BC (2023) | Scientific Reports | Ensemble Voting (SVM, KNN) | 97.65% | **2.35%** | [Link](https://www.nature.com/articles/s41598-023-32029-1) |
-| **7** | Histopathology Gene Expression Prediction (2023) | Scientific Reports | Deep CNN + Genomic Reg | 92.40% | **7.60%** | [Link](https://www.nature.com/articles/s41598-023-40219-0) |
-| **8** | Enhancing Registration via LSTM (2024) | Scientific Reports | Spatio-Temporal CNN-LSTM | 97.10% | **2.90%** | [Link](https://www.nature.com/articles/s41598-024-82965-9) |
-| **9** | Integrated Feature Selection & ML (2025) | Scientific Reports | mRMR + ReliefF + SVM/KNN | 99.12% | **0.88%** | [Link](https://www.nature.com/articles/s41598-025-97685-x) |
-| **10** | Aggregated Coefficient Ranking (2025) | Scientific Reports | ACR Feature Ranking + SVM | 98.40% | **1.60%** | [Link](https://www.nature.com/articles/s41598-025-87826-7) |
-| **11** | Detection of BC Using ML Optimization (2025) | Scientific Reports | GA & PSO Optimized SVM | 98.75% | **1.25%** | [Link](https://www.nature.com/articles/s41598-025-12644-w) |
-| **12** | Enhancing BC Diagnosis Through ML (2025) | Scientific Reports | SVM, KNN (K=5), DT, RF | 98.95% | **1.05%** | [Link](https://www.nature.com/articles/s41598-025-07628-9) |
-| **13** | BCDCNN: Deep Convolutional Network (2025) | Scientific Reports | Multi-Scale Custom CNN | 98.30% | **1.70%** | [Link](https://www.nature.com/articles/s41598-025-09974-0) |
-| **14** | Explainable AI-Driven DNN (2025) | Scientific Reports | Multi-Layer DNN + LIME/SHAP | 97.90% | **2.10%** | [Link](https://www.nature.com/articles/s41598-025-97718-5) |
-| **15** | Histopathological Image Based Diagnosis (2025) | Scientific Reports | EfficientNet + DenseNet | 99.05% | **0.95%** | [Link](https://www.nature.com/articles/s41598-025-04136-8) |
-| **16** | Multimodal Imaging DL Model (2025) | Scientific Reports | Multimodal CNN Fusion | 98.65% | **1.35%** | [Link](https://www.nature.com/articles/s41598-025-99535-2) |
-| **17** | Hybrid CNN with LSTM (Kaddes, 2025) | Scientific Reports | Sequential CNN-LSTM | 98.45% | **1.55%** | [Link](https://www.nature.com/articles/s41598-025-88459-6) |
-| **18** | Hybrid CNN-BiLSTM Framework (Lilhore, 2025) | Scientific Reports | CNN-BiLSTM + Attention | 98.80% | **1.20%** | [Link](https://www.nature.com/articles/s41598-025-95311-4) |
-| **19** | Parametric Survival vs ML Prognosis (2025) | Scientific Reports | Cox/Weibull + Deep Survival | 96.70% | **3.30%** | [Link](https://www.nature.com/articles/s41598-025-15696-0) |
-| **20** | Early BC Detection via Data Analysis (2024) | IEEE Access | Statistical FE + SVM/DL | 98.62% | **1.38%** | [PDF](https://ieeexplore.ieee.org/iel8/6287639/10380310/10720756.pdf) |
+| **1** | Optimized SVM for BC Detection (Bilal et al., 2024) | Scientific Reports (Springer) | Metaheuristic Quantum GWO + RBF-SVM | 98.60% | **1.40%** | [Nature](https://www.nature.com/articles/s41598-024-61322-w) |
+| **2** | Predictive Modeling for BC Classification (2024) | Scientific Reports (Springer) | SVM, KNN, Random Forest, LR, XGBoost | 98.25% | **1.75%** | [Nature](https://www.nature.com/articles/s41598-024-57740-5) |
+| **3** | Feature-Based Detection Using CNN (2024) | Scientific Reports (Springer) | Custom Deep CNN + Transfer Learning | 97.80% | **2.20%** | [Nature](https://www.nature.com/articles/s41598-024-73083-7) |
+| **4** | Deep Learning & Explainable AI (XAI) (2024) | Scientific Reports (Springer) | DNN + Grad-CAM & SHAP Interpretability | 98.10% | **1.90%** | [Nature](https://www.nature.com/articles/s41598-024-80535-7) |
+| **5** | Integrative Hybrid Deep Learning for BC (2024) | Scientific Reports (Springer) | Hybrid CNN (ResNet + DenseNet) + Cross-Attention | 98.55% | **1.45%** | [Nature](https://www.nature.com/articles/s41598-024-74305-8) |
+| **6** | Integrative ML Framework for Classifying BC (2023) | Scientific Reports (Springer) | Weighted Voting Ensemble (SVM, KNN, RF, NB) | 97.65% | **2.35%** | [Nature](https://www.nature.com/articles/s41598-023-32029-1) |
+| **7** | Histopathology Image Gene Prediction (2023) | Scientific Reports (Springer) | Deep CNN + Transcriptomic Regression | 92.40% | **7.60%** | [Nature](https://www.nature.com/articles/s41598-023-40219-0) |
+| **8** | Enhancing Registration Accuracy via LSTM (2024) | Scientific Reports (Springer) | Spatio-Temporal CNN + LSTM Registration | 97.10% | **2.90%** | [Nature](https://www.nature.com/articles/s41598-024-82965-9) |
+| **9** | Integrated Feature Selection & ML for Early BC (2025) | Scientific Reports (Springer) | mRMR + ReliefF Feature Selection + SVM/KNN | 99.12% | **0.88%** | [Nature](https://www.nature.com/articles/s41598-025-97685-x) |
+| **10** | Aggregated Coefficient Ranking Selection (2025) | Scientific Reports (Springer) | ACR Biomarker Ranking + KNN & SVM | 98.40% | **1.60%** | [Nature](https://www.nature.com/articles/s41598-025-87826-7) |
+| **11** | Detection of BC Using ML Optimization (2025) | Scientific Reports (Springer) | Genetic Algorithm (GA) & PSO Optimized SVM | 98.75% | **1.25%** | [Nature](https://www.nature.com/articles/s41598-025-12644-w) |
+| **12** | Enhancing BC Diagnosis Through ML (2025) | Scientific Reports (Springer) | Comparative SVM, KNN (K=5), DT, RF | 98.95% | **1.05%** | [Nature](https://www.nature.com/articles/s41598-025-07628-9) |
+| **13** | BCDCNN: Deep Convolutional Network (2025) | Scientific Reports (Springer) | Multi-Scale Custom CNN Architecture | 98.30% | **1.70%** | [Nature](https://www.nature.com/articles/s41598-025-09974-0) |
+| **14** | Explainable AI-Driven DNN (2025) | Scientific Reports (Springer) | Multi-Layer DNN + LIME & SHAP | 97.90% | **2.10%** | [Nature](https://www.nature.com/articles/s41598-025-97718-5) |
+| **15** | Histopathological Image Based Diagnosis (2025) | Scientific Reports (Springer) | Ensemble EfficientNet + DenseNet (H&E Stain) | 99.05% | **0.95%** | [Nature](https://www.nature.com/articles/s41598-025-04136-8) |
+| **16** | Multimodal Imaging DL Model (2025) | Scientific Reports (Springer) | Intermediate Fusion CNN (Mammography + US) | 98.65% | **1.35%** | [Nature](https://www.nature.com/articles/s41598-025-99535-2) |
+| **17** | Hybrid CNN with LSTM (Kaddes et al., 2025) | Scientific Reports (Springer) | Sequential CNN-LSTM Hybrid | 98.45% | **1.55%** | [Nature](https://www.nature.com/articles/s41598-025-88459-6) |
+| **18** | Hybrid CNN-BiLSTM Framework (Lilhore, 2025) | Scientific Reports (Springer) | CNN + Bidirectional LSTM + Attention | 98.80% | **1.20%** | [Nature](https://www.nature.com/articles/s41598-025-95311-4) |
+| **19** | Parametric Survival vs ML Prognosis (2025) | Scientific Reports (Springer) | Cox/Weibull Survival + Deep Survival DNN/SVM | 96.70% | **3.30%** | [Nature](https://www.nature.com/articles/s41598-025-15696-0) |
+| **20** | Early BC Detection via Data Analysis (2024) | IEEE Access (IEEE) | Statistical Feature Engineering + SVM/DL | 98.62% | **1.38%** | [IEEE PDF](https://ieeexplore.ieee.org/iel8/6287639/10380310/10720756.pdf) |
 
 ---
-### 🛠 ماژول‌های پیاده‌سازی شده تا پایان روز دوم (Implemented Modules)
-- **Day 1:** data_loader.py (پیش‌پردازش Z-Score)، eature_selection.py (رتبه‌بندی بیومارکرها)، svm_optimizer.py (بهینه‌سازی کرنل RBF در SVM).
-- **Day 2:** smote_balancer.py (توازن کلاس‌ها با SMOTE)، knn_classifier.py (تحلیل همسایگی KNN)، ensemble_models.py (مدل‌های ترکیبی RF, AdaBoost, Voting)، 	abular_benchmark.py (بنچمارک جامع داده‌های بالینی).
+
+### 📚 خلاصه تفصیلی ۵ خطی، متدولوژی و نرخ خطای هر ۲۰ مقاله
+
+#### ۱. Optimized Support Vector Machine for Breast Cancer Detection (Bilal et al., 2024)
+* **الگوریتم:** SVM بهینه‌شده با الگوریتم گرگ خاکستری کوانتومی | **دیتاست:** WDBC | **دقت:** ۹۸.۶۰٪ | **نرخ خطا:** ۱.۴۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-024-61322-w)
+> این مقاله به رفع چالش تنظیم هایپرپارامترها و انتخاب فیچرهای کلیدی در الگوریتم ماشین بردار پشتیبان (SVM) برای داده‌های سرطان سینه می‌پردازد. نویسندگان با ترکیب الگوریتم بهینه‌سازی فراابتکاری با هسته RBF در SVM، توانستند ابعاد بردار ویژگی را کاهش داده و مرز تصمیم‌گیری بهینه‌تری ایجاد نمایند. مدل روی مجموعه داده تشخیصی ویسکانسین (WDBC) پیاده‌سازی و اعتبارسنجی متقاطع ۱۰ برابری روی آن اعمال گردید. نتایج خروجی نشان داد که مدل بهینه‌شده مانع بیش‌برازش شده و جداسازی تومورهای خوش‌خیم از بدخیم را با ثبات بالا انجام می‌دهد. نرخ خطای طبقه‌بندی به ۱.۴۰٪ کاهش یافته که عملکردی پایدارتر و تفکیک‌پذیری بسیار بالاتری را نسبت به SVMهای استاندارد سنتی رقم زده است.
+
+#### ۲. Predictive Modeling for Breast Cancer Classification Using Machine Learning (2024)
+* **الگوریتم:** مقایسه SVM, KNN, RF, LR, XGBoost | **دیتاست:** WDBC | **دقت:** ۹۸.۲۵٪ | **نرخ خطا:** ۱.۷۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-024-57740-5)
+> پژوهش حاضر به ارزیابی تطبیقی و ساخت یک پایپ‌لاین پیش‌بینی جامع میان چندین مدل پایه و انسمبل یادگیری ماشین برای غربالگری سرطان سینه پرداخته است. روش‌های پیش‌پردازش استاندارد شامل نرمال‌سازی Z-Score و فیلتر کردن همبستگی‌های خطی بالا بین متغیرهای سلولی انجام پذیرفت. سپس الگوریتم‌های KNN، SVM و بوستینگ بر پایه معیارهای جامع Precision، Recall و مساحت زیر منحنی ROC تحلیل شدند. یافته‌ها نشان داد که ترکیب تکنیک‌های مقیاس‌بندی ویژگی با دسته‌بندی‌کننده‌های غیرخطی، حساسیت تشخیص بافت‌های بدخیم را به طرز چشمگیری بهبود می‌بخشد. مدل در تفکیک نهایی موفق به ثبت نرخ خطای ۱.۷۵٪ گردید و نشان داد که پایداری مدل‌های انسمبل در مواجهه با نویزهای داده‌ای بالاتر است.
+
+#### ۳. Feature-Based Detection of Breast Cancer Using CNN Architecture (2024)
+* **الگوریتم:** Custom CNN + Transfer Learning | **دیتاست:** BreakHis | **دقت:** ۹۷.۸۰٪ | **نرخ خطا:** ۲.۲۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-024-73083-7)
+> این مطالعه بر استفاده از شبکه‌های عصبی کانولوشنی (CNN) متمرکز بر استخراج فیچرهای مورفولوژیکی و بافتی از تصاویر ماموگرافی و هیستوپاتولوژی متمرکز است. برای غلبه بر کمبود داده‌های آموزشی پزشکی، از تکنیک‌های داده‌افزایی (Augmentation) هندسی و رنگی و تطبیق دامنه یادگیری انتقالی استفاده شده است. لایه‌های کانولوشن با اعمال فیلترهای سلسله‌مراتبی، ویژگی‌های موضعی نامنظم لبه‌های سلولی و هسته‌ها را به عنوان شاخص‌های بدخیمی شناسایی می‌کنند. ساختار پیشنهادی از مکانیزم تنظیم Dropout و Batch Normalization برای جلوگیری از Overfitting روی تصاویر سلولی با بزرگنمایی بالا بهره می‌برد. خطای دسته‌بندی تصویر در تعیین توده‌های سرطانی به ۲.۲۰٪ محدود شده که نشان‌دهنده توانایی عالی بینایی ماشین در تشخیص بصری توده‌هاست.
+
+#### ۴. Deep Learning and Explainable AI (XAI) for Breast Cancer Diagnosis (2024)
+* **الگوریتم:** DNN + Grad-CAM & SHAP | **دیتاست:** Ultrasound & Clinical | **دقت:** ۹۸.۱۰٪ | **نرخ خطا:** ۱.۹۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-024-80535-7)
+> مسئله جعبه سیاه بودن شبکه‌های یادگیری عمیق در کاربردهای پزشکی، انگیزه اصلی این مقاله برای پیاده‌سازی سیستم هوش مصنوعی توضیح‌پذیر (XAI) است. ساختار یادگیری عمیق طراحی‌شده، هم‌زمان با استخراج خودکار فیچر، نقشه‌های حرارتی تعاملی (Heatmaps) به وسیله Grad-CAM تولید می‌کند تا نقاط مشکوک را برجسته سازد. همچنین از روش SHAP برای نشان دادن میزان تأثیر هر فیچر بالینی در تصمیم نهایی طبقه‌بند عمیق استفاده شده است. این شفاف‌سازی امکان اعتبارسنجی مستقیم توسط رادیولوژیست‌ها و کاهش سوگیری‌های مدل در نمونه‌های حاشیه‌ای را فراهم ساخته است. مدل نهایی با دقت ۹۸.۱۰٪ و خطای ۱.۹۰٪ نشان داد که تفسیرپذیری بالا الزماً به معنای افت دقت محاسباتی سیستم نخواهد بود.
+
+#### ۵. Integrative Hybrid Deep Learning for Enhanced Breast Cancer Diagnosis (2024)
+* **الگوریتم:** ResNet + DenseNet + Cross-Attention | **دیتاست:** Mammography & Histopathology | **دقت:** ۹۸.۵۵٪ | **نرخ خطا:** ۱.۴۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-024-74305-8)
+> این مقاله یک چارچوب یادگیری عمیق ترکیبی ارائه می‌دهد که توانمندی‌های چند شبکه عمیق استخراج‌کننده ویژگی (مبتنی بر اتصالات باقیمانده و متراکم) را ادغام می‌کند. ایده کلیدی در این ادغام، تجمیع نقشه‌های ویژگی فضایی دقیق از مقیاس‌های مختلف تصویر برای متمایزسازی ضایعات پیچیده پستانی است. یک بلوک توجه متقابل (Cross-Attention) جهت وزن‌دهی به کانال‌های دارای بار اطلاعاتی بافت‌شناسی بالاتر در ساختار تعبیه گردیده است. سیستم ترکیبی حاصل بر ناهمگونی‌های شدید نوری و رنگی لام‌های پاتولوژی غلبه کرده و نرخ منفی کاذب را به کمترین میزان می‌رساند. این مدل موفق شد نرخ خطای کل سیستم را به ۱.۴۵٪ تقلیل دهد که نشان‌دهنده ارتقای اطمینان در پردازش هیبریدی تصاویر بالینی است.
+
+#### ۶. An Integrative Machine Learning Framework for Classifying Breast Cancer (2023)
+* **الگوریتم:** Ensemble Voting (SVM, RF, NB, KNN) | **دیتاست:** Wisconsin Breast Cancer | **دقت:** ۹۷.۶۵٪ | **نرخ خطا:** ۲.۳۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-023-32029-1)
+> پژوهشگران در این مقاله چارچوبی یکپارچه توسعه داده‌اند که تلفیقی از طبقه‌بندهای ناهمگن یادگیری ماشین نظارت‌شده را برای تصمیم‌گیری بالینی به کار می‌گیرد. پایپ‌لاین شامل کاهش ابعاد، حذف هم‌خطی‌ها و اعمال الگوریتم رای‌گیری وزنی بر پایه عملکرد اعتبار‌سنجی تقاطعی هر مدل است. الگوریتم‌های پایه از جمله KNN و SVM با هسته‌های غیرخطی در کنار درخت‌های تصمیم در سناریوهای مختلف نویزی ارزیابی شدند. نتایج اثبات کرد که ترکیب خروجی چند الگوریتم بر خطاهای تکی هر مدل غلبه کرده و خطای واریانس بالایی که در مدل‌های منفرد دیده می‌شود را کاهش می‌دهد. نرخ خطای نهایی این چارچوب یکپارچه ۲.۳۵٪ برآورد شد و پایداری چشمگیری در داده‌های فاقد توازن آماری از خود نشان داد.
+
+#### ۷. Breast Cancer Histopathology Image-Based Gene Expression Prediction (2023)
+* **الگوریتم:** Deep CNN + Genomic Regression | **دیتاست:** TCGA Breast Cancer | **دقت:** ۹۲.۴۰٪ | **نرخ خطا:** ۷.۶۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-023-40219-0)
+> این مقاله نوآورانه ارتباط متقابل بین فنوتیپ‌های میکروسکوپی سلولی و پروفایل‌های بیان ژن مولکولی (ژنومیک) را بررسی می‌نماید. یک ساختار شبکه عصبی پیچشی عمیق برای استخراج خصوصیات بصری بافت سرطانی آموزش داده شده تا الگوهای جهش ژنتیکی کلیدی را تخمین بزند. این روش به عنوان جایگزینی ارزان‌قیمت و سریع برای آزمایش‌های ژنتیکی گران‌قیمت NGS در فرآیند غربالگری معرفی شده است. پیچیدگی محاسباتی و چالش نویز بیولوژیکی در این تسک به دلیل ابعاد بالای داده‌های ترنسکریپتوم به مراتب از طبقه‌بندی باینری معمول بالاتر است. با این حال، مدل توانست با دقت ۹۲.۴۰٪ و نرخ خطای ۷.۶۰٪ زیرگروه‌های مولکولی سرطان سینه (مانند Luminal و HER2) را به درستی تفکیک کند.
+
+#### ۸. Enhancing Registration and Classification Accuracy Using LSTM Architecture (2024)
+* **الگوریتم:** Spatio-Temporal CNN-LSTM | **دیتاست:** DCE-MRI | **دقت:** ۹۷.۱۰٪ | **نرخ خطا:** ۲.۹۰٪ (Dice: 0.92) | [لینک مقاله](https://www.nature.com/articles/s41598-024-82965-9)
+> تمرکز این تحقیق بر مدل‌سازی تغییرات سری زمانی و پیوستگی اسلایس‌های متوالی تصویربرداری ام‌آر‌آی با ماده حاجب داینامیک (DCE-MRI) است. از شبکه‌های بازگشتی LSTM برای دریافت توالی تغییرات جذب کنتراست توسط توده‌ها در طول زمان و تشخیص فازهای شستشو (Washout) استفاده شده است. ادغام ویژگی‌های فضایی استخراج‌شده از CNN با وابستگی‌های زمانی مدل‌شده توسط LSTM، اطلاعات دینامیکی ارزشمندی از عروق تومور فراهم آورد. این رویکرد به ویژه در تشخیص تومورهای تهاجمی سریع‌الرشد از فیبروآدنوم‌های خوش‌خیم نقشی کلیدی ایفا نمود. ارزیابی مدل نشان داد که نرخ خطای تشخیصی در تفکیک ضایعات دینامیک به ۲.۹۰٪ رسیده که دستاوردی مهم در مدل‌سازی ترتیبی پزشکی است.
+
+#### ۹. Integrated Feature Selection and Machine Learning for Early Breast Cancer Detection (2025)
+* **الگوریتم:** mRMR + ReliefF + SVM & KNN | **دیتاست:** Wisconsin Clinical Benchmark | **دقت:** ۹۹.۱۲٪ | **نرخ خطا:** ۰.۸۸٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-97685-x)
+> مقاله بهینه‌سازی فرآیند تشخیص اولیه را از طریق ترکیب استراتژی‌های انتخاب ویژگی چندمعیاره و فیلترهای اطلاعاتی پیشرفته محقق ساخته است. نویسندگان از دو الگوریتم مکمل mRMR و ReliefF برای حذف ابعاد زائد و نگه‌داشت فیچرهای دارای حداکثر ارتباط و حداقل حشو آماری استفاده کردند. طبقه‌بندهای SVM با هسته گوسی و KNN بر روی زیرمجموعه فیچرهای منتخب اعمال و به صورت متقاطع دقیق ارزیابی شدند. کاهش ۹۰ درصدی بار محاسباتی در حین آموزش بدون فدا کردن دقت تشخیصی از دستاوردهای بارز مهندسی ویژگی در این کار است. سیستم به نرخ فوق‌العاده ۹۹.۱۲٪ در دقت و تنها ۰.۸۸٪ نرخ خطا دست یافت که آن را در صدر مدل‌های بالینی قرار می‌دهد.
+
+#### ۱۰. Aggregated Coefficient Ranking Based Feature Selection for Classification (2025)
+* **الگوریتم:** ACR Feature Selection + KNN & SVM | **دیتاست:** Coimbra & WDBC | **دقت:** ۹۸.۴۰٪ | **نرخ خطا:** ۱.۶۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-87826-7)
+> این مقاله راهکاری نوین تحت عنوان رتبه‌بندی ضرایب تجمعی (ACR) جهت شناسایی بیومارکرهای کلیدی در داده‌های سرولوژی و آزمایشگاهی معرفی می‌کند. الگوریتم ACR با محاسبه برآیند وزن‌دهی ضرایب همبستگی پیرسون و فواصل اطلاعاتی، به هر متغیر بالینی یک امتیاز اهمیت قطعی اختصاص می‌دهد. دسته‌بندی‌کننده‌های یادگیری ماشین استاندارد از جمله KNN و بردار پشتیبان بر روی سطوح مختلف آستانه فیچرها تست شدند. این متدولوژی موفق شد تنها با حفظ یک سوم فیچرهای بیومارکر خون، قدرت تشخیص بیماری را بدون افت حفظ نماید. نرخ خطای نهایی به دست آمده ۱.۶۰٪ بود که نشان‌دهنده دقت بالا در کنار بهینگی حجم پارامترهای آزمایشگاهی مورد نیاز برای غربالگری است.
+
+#### ۱۱. Detection of Breast Cancer Using Machine Learning Optimization Techniques (2025)
+* **الگوریتم:** GA & PSO Optimized SVM | **دیتاست:** UCI Breast Cancer | **دقت:** ۹۸.۷۵٪ | **نرخ خطا:** ۱.۲۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-12644-w)
+> پژوهشگران در این مقاله به حل مسئله بهینه‌سازی هم‌زمان وزن‌ها و پارامترهای تنبیه خطا (C و Gamma) در ماشین بردار پشتیبان پرداخته‌اند. با استفاده از الگوریتم بهینه‌سازی ازدحام ذرات (PSO) و الگوریتم ژنتیک، فضای جستجوی چندبعدی هایپرپارامترها با دقت بسیار بالا پیمایش شد. این کار مانع از فرورفتن مدل در کمینه‌های محلی ناشی از گرید سرچ سنتی روی توزیع داده‌های پزشکی شده است. مدل خروجی از پایداری آماری چشمگیری برخوردار بوده و در برابر نمونه‌های نویزی مرزی، کمترین افت عملکرد را نشان داده است. نتایج تست بر روی داده‌های استاندارد، نرخ خطای پایین ۱.۲۵٪ را با حداکثر سرعت همگرایی در یادگیری به ثبت رسانده است.
+
+#### ۱۲. Enhancing Breast Cancer Diagnosis Through ML Algorithms (SVM, KNN, DT, RF) (2025)
+* **الگوریتم:** SVM, KNN (K=5), Decision Tree, RF | **دیتاست:** WDBC | **دقت:** ۹۸.۹۵٪ | **نرخ خطا:** ۱.۰۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-07628-9)
+> این تحقیق ارزیابی تجربی دقیقی بر روی پنج الگوریتم پرکاربرد یادگیری ماشین کلاسیک برای تعیین دقیق تومورهای پستان انجام داده است. پیش‌پردازش جامع شامل تکنیک‌های پر کردن داده‌های گمشده (KNN Imputer) و مقیاس‌بندی مقادیر دورافتاده با استفاده از RobustScaler اعمال گردید. مقایسه نشان داد که SVM با هسته چندجمله‌ای و خطی در مرزبندی داده‌های چندبعدی تومورها بهترین جداسازی را ارائه می‌دهد. همچنین الگوریتم KNN در مقدار K=5 با معیار فاصله اقلیدسی به نتایج بسیار رقابتی دست یافت. نرخ خطای طبقه‌بند برتر در این کار پژوهشی به ۱.۰۵٪ رسید که نشان‌دهنده کارآمدی بالای الگوریتم‌های کلاسیک در داده‌های ساخت‌یافته است.
+
+#### ۱۳. BCDCNN: Deep Convolutional Neural Network for Breast Cancer Diagnosis (2025)
+* **الگوریتم:** Multi-Scale BCDCNN | **دیتاست:** INbreast & DDSM Mammography | **دقت:** ۹۸.۳۰٪ | **نرخ خطا:** ۱.۷۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-09974-0)
+> مقاله معماری نوین کانولوشنی تحت عنوان BCDCNN را برای تشخیص خودکار ناهنجاری‌ها و میکروکلسیفیکاسیون‌ها در ماموگرافی معرفی می‌کند. ساختار BCDCNN از بلوک‌های استخراج ویژگی با ابعاد فیلتر متغیر بهره می‌برد تا ضایعات با ابعاد فیزیکی متفاوت را به طور هم‌زمان ردیابی کند. با به‌کارگیری توابع فعال‌سازی مدرن و نرمال‌سازی پیوسته، مشکل محو شدگی گرادیان در لایه‌های عمیق این شبکه به طور کامل برطرف شده است. اعتبارسنجی خارجی روی پایگاه‌های داده چندمرکزی نشان داد که مدل در برابر تفاوت‌های تجهیزات تصویربرداری بسیار مقاوم و تعمیم‌پذیر است. نرخ خطای طبقه‌بندی تصاویر ماموگرافی در این مقاله به ۱.۷۰٪ محدود شده که نشان‌دهنده دقت کلینیکی بالای مدل است.
+
+#### ۱۴. Explainable AI-Driven Deep Neural Network for Breast Cancer Prognosis (2025)
+* **الگوریتم:** Deep Neural Network (DNN) + LIME & SHAP | **دیتاست:** SEER Cohort | **دقت:** ۹۷.۹۰٪ | **نرخ خطا:** ۲.۱۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-97718-5)
+> این پژوهش به مسئله بقا و پیش‌آگهی طولانی‌مدت بیماران مبتلا به سرطان سینه با استفاده از یک شبکه عصبی عمیق (DNN) چندلایه پرداخته است. جهت رفع ابهامات بالینی، فریم‌ورک‌های LIME و SHAP به شبکه اضافه شدند تا اهمیت فاکتورهایی نظیر سایز تومور، گرید و گیرنده‌های هورمونی تشریح شوند. این مدل پیش‌بینی احتمال عود بیماری طی دوره‌های ۵ و ۱۰ ساله را با تحلیل عمیق الگوهای غیرخطی ثبت می‌کند. تحلیل‌ها نشان داد که ویژگی‌های سن، درگیری گره لنفاوی و وضعیت ER/PR بیشترین وزن را در تصمیم‌گیری‌های شبکه عصبی دارند. نرخ خطای نهایی پیش‌بینی مدل بر روی داده‌های آزمون ۲.۱۰٪ ارزیابی شد که اعتباری شایان توجه به تحلیل‌های پیش‌آگهی آن می‌بخشد.
+
+#### ۱۵. Histopathological Image Based Breast Cancer Diagnosis Using Deep Learning (2025)
+* **الگوریتم:** Ensemble EfficientNet + DenseNet | **دیتاست:** BreaKHis (40X-400X) | **دقت:** ۹۹.۰۵٪ | **نرخ خطا:** ۰.۹۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-04136-8)
+> این کار به تحلیل تخصصی تصاویر میکروسکوپی بیوپسی سینه تحت بزرگنمایی‌های مختلف نوری با شبکه‌های یادگیری عمیق پیشرفته پرداخته است. رویکرد پیشنهادی از ساختار انسمبل دو مدل EfficientNet و DenseNet به همراه یادگیری انتقالی و تیونینگ ریزلایه بهره می‌برد. سیستم قادر است تغییرات هسته سلولی، تراکم توموری و پلئومورفیسم بافتی را حتی در بزرگنمایی‌های کم به دقت شناسایی کند. برای جلوگیری از خطای طبقه‌بندی ناشی از رنگ‌آمیزی‌های غیریکنواخت هماتوکسیلین-ائوزین (H&E)، تکنیک نرمال‌سازی رنگ پاتولوژی اعمال گردید. با ادغام پیش‌بینی‌های دو شبکه عمیق، نرخ خطای سیستم به رکورد چشمگیر ۰.۹۵٪ کاهش یافت که برتری پاتولوژی دیجیتال را اثبات می‌کند.
+
+#### ۱۶. Deep Learning-Based Multimodal Imaging Model for Breast Cancer Assessment (2025)
+* **الگوریتم:** Multimodal CNN Fusion | **دیتاست:** Mammography + Ultrasound | **دقت:** ۹۸.۶۵٪ | **نرخ خطا:** ۱.۳۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-99535-2)
+> پژوهشگران در این مقاله به بررسی یکی از چالش‌های بزرگ کلینیکی، یعنی ترکیب داده‌های تصویری از دو مدالیته متفاوت ماموگرافی و اولتراسوند پرداختند. معماری پیشنهادی شامل دو شاخه مستقل کانولوشنی برای پردازش هم‌زمان بافت نرم و میکروکلسیفیکاسیون‌ها است که در لایه‌های بالا با هم فیوژن می‌شوند. فیوژن ویژگی‌ها در سطح میانی (Intermediate Fusion) باعث گردید نواقص یک نوع تصویربرداری توسط ویژگی‌های مدالیته دیگر جبران گردد. این مدل باعث کاهش شدید بیوپسی‌های غیرضروری در ضایعات توده‌ای مشکوک متراکم پستانی شد. سیستم تلفیقی چندوجهی به دقت کلی ۹۸.۶۵٪ و نرخ خطای ۱.۳۵٪ دست یافت که حاکی از برتری سامانه‌های مالتی‌مودال نسبت به تک‌مدالیته است.
+
+#### ۱۷. Hybrid CNN with LSTM for Temporal and Spatial Feature Extraction (Kaddes et al., 2025)
+* **الگوریتم:** Hybrid CNN-LSTM | **دیتاست:** Sequential Mammography & Pathology | **دقت:** ۹۸.۴۵٪ | **نرخ خطا:** ۱.۵۵٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-88459-6)
+> مقاله یک ساختار هایبرید یکپارچه از ترکیب شبکه کانولوشنی (CNN) و شبکه عصبی بازگشتی (LSTM) را برای مدل‌سازی توامان فضایی و متوالی تدوین کرده است. شبکه CNN وظیفه استخراج فیچرهای موضعی سلولی از تصاویر مقطعی را بر عهده داشته و خروجی آن به سلول‌های حافظه دار LSTM ارسال می‌گردد. ماژول LSTM ارتباطات ساختاری و الگوهای بین‌اسلایسی توده سرطانی را در راستای عمق اسکن ردیابی و فرموله می‌کند. این مدل توانایی بالایی در تشخیص حاشیه‌های تهاجمی توده‌ها و نفوذ سلول‌های بدخیم به بافت همبند اطراف نشان داده است. آزمایش‌ها دقت ۹۸.۴۵٪ و نرخ خطای تشخیصی ۱.۵۵٪ را نشان دادند که نشانگر هماهنگی عالی بین یادگیری مکانی و متوالی در معماری هیبرید است.
+
+#### ۱۸. Hybrid CNN-BiLSTM Framework for Robust Breast Cancer Detection (Lilhore et al., 2025)
+* **الگوریتم:** CNN + BiLSTM + Attention Mechanism | **دیتاست:** Hybrid Breast Imaging | **دقت:** ۹۸.۸۰٪ | **نرخ خطا:** ۱.۲۰٪ | [لینک مقاله](https://www.nature.com/articles/s41598-025-95311-4)
+> نویسندگان در این کار یک ساختار دوگانه توانمند مرکب از لایه‌های کانولوشن و شبکه عصبی دوجهته Bi-directional LSTM به همراه مکانیزم توجه طراحی کردند. استفاده از BiLSTM به مدل اجازه می‌دهد تا ویژگی‌های بافتی استخراج‌شده را در دو جهت پیش‌رو و پس‌رو بازخوانی کرده و وابستگی‌های زمینه دور را ثبت نماید. لایه توجه تعبیه‌شده نیز تمرکز محاسباتی را بر نواحی با دانسیته توموری غیرعادی معطوف کرده و بخش‌های سالم بافت چربی را کم‌اثر می‌سازد. سیستم بهینه‌سازی‌شده در برابر اعوجاج‌های تصویری، کنتراست پایین و نویزهای حرکتی مقاومت بسیار چشمگیری نشان داد. مدل نهایی با دقت ۹۸.۸۰٪ و خطای بسیار ناچیز ۱.۲۰٪ توانست عملکردی در سطح فوق‌تخصصی پاتولوژی بالینی ارائه دهد.
+
+#### ۱۹. Comparative Analysis of Parametric Survival Models and ML in Breast Cancer Prognosis (2025)
+* **الگوریتم:** Cox/Weibull Survival + SVM, RF & DNN | **دیتاست:** SEER Clinical Follow-up | **دقت:** ۹۶.۷۰٪ | **نرخ خطا:** ۳.۳۰٪ (C-index: 0.89) | [لینک مقاله](https://www.nature.com/articles/s41598-025-15696-0)
+> این مطالعه تحلیلی عمیق و مقایسه‌ای بین روش‌های آمار زیستی کلاسیک (مدل‌های بقای پارامتریک Weibull و Cox) و الگوریتم‌های مدرن هوش مصنوعی صورت داده است. مدل‌های یادگیری ماشین شامل SVM با هسته‌های بقا و شبکه‌های عصبی عمیق برای برازش منحنی بقای بیماران بر اساس متغیرهای بالینی آموزش دیدند. تحلیل‌ها اثبات کردند که مدل‌های یادگیری عمیق به دلیل شناسایی تعاملات غیرخطی پیچیده بین دارودرمانی و ژنتیک، پیش‌بینی دقیق‌تری از عود ارائه می‌دهند. در مقابل، مدل‌های پارامتریک سنتی قابلیت تفسیر زیستی ساده‌تری داشته اما در نمونه‌های پرخطر خطای بالاتری ثبت کردند. سیستم هوشمند یادگیری ماشین با ثبت نرخ خطای ۳.۳۰٪ برتری خود را نسبت به آزمون‌های سنتی بقا نشان داد.
+
+#### ۲۰. Enhancing Early Breast Cancer Detection Through Advanced Data Analysis (2024)
+* **الگوریتم:** Advanced Statistical FE + Optimized SVM & DL | **دیتاست:** Clinical & Mammography | **دقت:** ۹۸.۶۲٪ | **نرخ خطا:** ۱.۳۸٪ | [لینک PDF مستقیم](https://ieeexplore.ieee.org/iel8/6287639/10380310/10720756.pdf)
+> این مقاله منتشرشده در مجله IEEE Access چارچوبی مدرن برای تشخیص اولیه توده‌های سرطانی بر بستر تحلیل پیشرفته داده‌های چندبعدی ارائه می‌دهد. پایپ‌لاین طراحی‌شده ترکیبی از مهندسی ویژگی‌های آماری پیشرفته، فیلترینگ نویزهای سیگنالی و دسته‌بندی‌کننده بهینه‌شده SVM و یادگیری عمیق است. تمرکز ویژه مقاله بر بیشینه‌سازی حساسیت تشخیصی برای پیشگیری از نادیده گرفته شدن موارد اولیه بیماری در ماموگرافی بافت‌های متراکم متمرکز گردیده است. پیاده‌سازی متدولوژی بر روی رکوردهای واقعی نشان داد که پیش‌پردازش هدفمند سیگنال‌ها پایداری مدل را در کلینیک‌های مختلف تضمین می‌کند. این چارچوب با کسب دقت ۹۸.۶۲٪ و نرخ خطای ۱.۳۸٪، قابلیت اطمینان فوق‌العاده‌ای در تشخیص زودهنگام سرطان سینه ارائه داده است.
+
 ---
-### 🖼 معماری‌های پردازش تصویر و یادگیری عمیق (Day 3: CNN & Multimodal Imaging)
-در گام سوم پروژه، الگوریتم‌های مبتنی بر تصویر از مقالات **۳، ۵، ۸، ۱۳، ۱۵ و ۱۶** پیاده‌سازی شدند:
+
+### 🛠 ماژول‌های پیاده‌سازی شده در پوشه `src/` (Days 1 to 4)
+
+#### فاز ۱ و ۲: داده‌های بالینی، مهندسی ویژگی و یادگیری ماشین کلاسیک/انسمبل
+1. **`src/data_loader.py`**: بارگذاری دیتاست ویسکانسین (WDBC) و استانداردسازی Z-Score بدون نشت داده (Data Leakage Prevention).
+2. **`src/feature_selection.py`**: انتخاب ویژگی و رتبه‌بندی بیومارکرها بر اساس ضریب همبستگی پیرسون و ACR (مقالات ۹ و ۱۰).
+3. **`src/svm_optimizer.py`**: بهینه‌سازی ماشین بردار پشتیبان (SVM) با کرنل RBF و تحلیل حساسیت پارامترهای C و Gamma (مقالات ۱، ۱۱ و ۱۲).
+4. **`src/smote_balancer.py`**: توازن‌سازی کلاس‌های اقلیت و اکثریت با الگوریتم درون‌یابی خطی **SMOTE** (مقالات ۹، ۱۰ و ۲۰).
+5. **`src/knn_classifier.py`**: تحلیل الگوریتم نزدیک‌ترین همسایه (**KNN**) در مقادیر مختلف K و معیارهای فاصله اقلیدسی و منهتن (مقالات ۲ و ۱۲).
+6. **`src/ensemble_models.py`**: پیاده‌سازی مدل‌های ترکیبی **Random Forest**، **AdaBoost** و **Integrative Soft-Voting** (مقالات ۲، ۶ و ۱۲).
+7. **`src/tabular_benchmark.py`**: بنچمارک جامع مقایسه‌ای تمامی ۶ مدل روی داده‌های بالینی به همراه گزارش نرخ خطا و منفی کاذب (FN).
+
+#### فاز ۳: پردازش تصویر، شبکه‌های کانولوشنی (CNN) و ادغام چندوجهی
 1. **`src/image_generator.py`**: شبیه‌سازی توده‌های پستانی، داده‌افزایی هندسی (مقاله ۳) و نرمال‌سازی رنگ پاتولوژی H&E (مقاله ۱۵).
 2. **`src/cnn_layers.py`**: پیاده‌سازی بلوک کانولوشنی چندمقیاسی (**BCDCNN** - مقاله ۱۳) با ترکیب فیلترهای 3x3 و 5x5.
-3. **`src/tumor_segmentation.py`**: استخراج ماسک تومور و ارزیابی همپوشانی مکانی با معیار **Dice Similarity Coefficient** (مقاله ۸).
-4. **`src/multimodal_fusion.py`**: ادغام ویژگی‌های ماموگرافی و سونوگرافی با مکانیزم **Cross-Attention** (مقالات ۵ و ۱۶ با نرخ خطای ۱.۳۵٪).
+3. **`src/tumor_segmentation.py`**: استخراج ماسک تومور و ارزیابی همپوشانی مکانی با معیار **Dice Similarity Coefficient** و **IoU** (مقاله ۸).
+4. **`src/multimodal_fusion.py`**: ادغام ویژگی‌های ماموگرافی و سونوگرافی با مکانیزم **Cross-Attention** (مقالات ۵ و ۱۶).
 
----
-### 🧠 شبکه‌های بازگشتی هیبریدی و هوش مصنوعی توضیح‌پذیر (Day 4: CNN-LSTM, BiLSTM & XAI)
-در گام چهارم، معماری‌های ترتیبی و الگوریتم‌های تفسیرپذیر از مقالات **۴، ۸، ۱۴، ۱۷ و ۱۸** اضافه شدند:
-1. **`src/cnn_lstm_hybrid.py`**: مدل‌سازی توالی اسلایس‌های تصویربرداری با ترکیب CNN و درگاه‌های حافظه LSTM (مقاله ۱۷ با نرخ خطای ۱.۵۵٪).
-2. **`src/cnn_bilstm_attention.py`**: شبکه دوجهته **CNN-BiLSTM** مجهز به مکانیزم **Attention** برای تمرکز روی اسلایس‌های بحرانی تومور (مقاله ۱۸ با نرخ خطای ۱.۲۰٪).
+#### فاز ۴: شبکه‌های بازگشتی هیبریدی و هوش مصنوعی توضیح‌پذیر (XAI)
+1. **`src/cnn_lstm_hybrid.py`**: مدل‌سازی توالی اسلایس‌های تصویربرداری با ترکیب CNN و درگاه‌های حافظه LSTM (مقاله ۱۷).
+2. **`src/cnn_bilstm_attention.py`**: شبکه دوجهته **CNN-BiLSTM** مجهز به مکانیزم **Attention** برای تمرکز روی اسلایس‌های بحرانی تومور (مقاله ۱۸).
 3. **`src/image_registration.py`**: انطباق مکانی تصاویر پزشکی و بهبود معیارهای **MSE، PSNR و CC** (مقاله ۸).
 4. **`src/explainable_ai.py`**: پیاده‌سازی شبکه عصبی عمیق (**DNN**) همراه با نقشه‌های حرارتی **Grad-CAM** و تحلیل اهمیت ویژگی‌های بالینی (مقالات ۴ و ۱۴).
+
+---
+**Developed & Maintained by [Alireza Naseri](https://github.com/alirezanaseri548)**
