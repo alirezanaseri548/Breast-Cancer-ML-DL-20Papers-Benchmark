@@ -36,3 +36,10 @@
 ### 🛠 ماژول‌های پیاده‌سازی شده تا پایان روز دوم (Implemented Modules)
 - **Day 1:** data_loader.py (پیش‌پردازش Z-Score)، eature_selection.py (رتبه‌بندی بیومارکرها)، svm_optimizer.py (بهینه‌سازی کرنل RBF در SVM).
 - **Day 2:** smote_balancer.py (توازن کلاس‌ها با SMOTE)، knn_classifier.py (تحلیل همسایگی KNN)، ensemble_models.py (مدل‌های ترکیبی RF, AdaBoost, Voting)، 	abular_benchmark.py (بنچمارک جامع داده‌های بالینی).
+---
+### 🖼 معماری‌های پردازش تصویر و یادگیری عمیق (Day 3: CNN & Multimodal Imaging)
+در گام سوم پروژه، الگوریتم‌های مبتنی بر تصویر از مقالات **۳، ۵، ۸، ۱۳، ۱۵ و ۱۶** پیاده‌سازی شدند:
+1. **`src/image_generator.py`**: شبیه‌سازی توده‌های پستانی، داده‌افزایی هندسی (مقاله ۳) و نرمال‌سازی رنگ پاتولوژی H&E (مقاله ۱۵).
+2. **`src/cnn_layers.py`**: پیاده‌سازی بلوک کانولوشنی چندمقیاسی (**BCDCNN** - مقاله ۱۳) با ترکیب فیلترهای 3x3 و 5x5.
+3. **`src/tumor_segmentation.py`**: استخراج ماسک تومور و ارزیابی همپوشانی مکانی با معیار **Dice Similarity Coefficient** (مقاله ۸).
+4. **`src/multimodal_fusion.py`**: ادغام ویژگی‌های ماموگرافی و سونوگرافی با مکانیزم **Cross-Attention** (مقالات ۵ و ۱۶ با نرخ خطای ۱.۳۵٪).
