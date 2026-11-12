@@ -2,7 +2,7 @@
 ## Breast Cancer Diagnosis ML & DL Benchmark (Synthesis of 20 Peer-Reviewed Journal Papers)
 
 [![Author](https://img.shields.io/badge/Author-Alireza%20Naseri-blue.svg)](https://github.com/alirezanaseri548)
-[![Status](https://img.shields.io/badge/Progress-Day%204%20of%205%20Completed-yellowgreen.svg)]()
+[![Status](https://img.shields.io/badge/Status-Completed%20(All%205%20Phases)-brightgreen.svg)]()
 [![Papers](https://img.shields.io/badge/Reviewed%20Journals-20%20Papers%20(Nature%20%26%20IEEE)-success.svg)]()
 [![Python](https://img.shields.io/badge/Python-3.10%2B-yellow.svg)]()
 
@@ -146,3 +146,15 @@
 
 ---
 **Developed & Maintained by [Alireza Naseri](https://github.com/alirezanaseri548)**
+#### فاز ۵: ژنومیک تصویری، تحلیل بقا و اجرای یکپارچه (Day 5)
+1. **`src/gene_expression.py`**: تخمین سطح بیان ژن‌های سرطانی (ESR1, PGR, ERBB2/HER2, Ki-67) و تعیین زیرگروه مولکولی از روی تصاویر پاتولوژی (مقاله ۷).
+2. **`src/survival_prognosis.py`**: مدل‌سازی بقای ۵ ساله و ریسک عود بیماری با ترکیب متغیرهای بالینی (مقاله ۱۹).
+3. **`cpp_playground.cpp`**: پیاده‌سازی آموزشی الگوریتم‌ها از صفر به زبان **C++17** با کامنت‌های فارسی.
+4. **`run_all_benchmarks.py`**: اسکریپت جامع اجرای تمام پایپ‌لاین‌های ۲۰ مقاله با یک دستور واحد.
+
+---
+
+### 🚀 راهنمای نصب و اجرای سریع کل پروژه (Quickstart)
+- نصب کتابخانه‌ها: `pip install -r requirements.txt`
+- اجرای یکپارچه تمام بنچمارک‌های ۲۰ مقاله: `python run_all_benchmarks.py`
+- کامپایل و اجرای شبیه‌ساز C++17: `g++ -std=c++17 -O2 cpp_playground.cpp -o bc_demo && ./bc_demo`
